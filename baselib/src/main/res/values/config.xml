@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_app_id">""</string>
+    <string name="base_product_name">""</string>
+    <string name="base_roleId">""</string>
+
+    <!--状态栏、标题栏模式 0 - 亮色）；1 - 暗色（默认）-->
+    <integer name="base_core_statusTitleBarMode">1</integer>
+
+    <!--SmartRefreshLayout start-->
+    <attr name="base_core_layout_srlSpinnerStyle" format="enum">
+        <enum name="Translate" value="0" /><!--平行移动-->
+        <enum name="Scale" value="1" /><!--拉伸形变-->
+        <enum name="FixedBehind" value="2" /><!--固定在背后-->
+        <enum name="FixedFront" value="3" /><!--固定在前面-->
+        <enum name="MatchLayout" value="4" /><!--填满布局-->
+    </attr>
+    <attr name="base_core_srlAccentColor" format="color" />
+    <attr name="srlClassicsSpinnerStyle" format="enum">
+        <enum name="Translate" value="0" /><!--平行移动-->
+        <enum name="Scale" value="1" /><!--拉伸形变-->
+        <enum name="FixedBehind" value="2" /><!--固定在背后-->
+    </attr>
+    <attr name="base_core_srlDrawableArrow" format="reference" />
+    <attr name="base_core_srlDrawableArrowSize" format="dimension" />
+    <attr name="base_core_srlDrawableMarginRight" format="dimension" />
+    <attr name="base_core_srlDrawableProgress" format="reference" />
+    <attr name="base_core_srlDrawableProgressSize" format="dimension" />
+    <attr name="base_core_srlDrawableSize" format="dimension" />
+    <attr name="base_core_srlEnableHorizontalDrag" format="boolean" />
+    <attr name="base_core_srlFinishDuration" format="integer" />
+    <attr name="base_core_srlPrimaryColor" format="color" />
+    <attr name="base_core_srlTextSizeTime" format="dimension" />
+    <attr name="base_core_srlTextSizeTitle" format="dimension" />
+    <declare-styleable name="base_core_BallPulseFooter">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlIndicatorColor" format="color" />
+        <attr name="srlAnimatingColor" format="color" />
+        <attr name="srlNormalColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="base_core_BezierRadarHeader">
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlEnableHorizontalDrag" />
+    </declare-styleable>
+    <declare-styleable name="base_core_ClassicsFooter">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlFinishDuration" />
+        <attr name="srlTextSizeTitle" />
+        <attr name="srlDrawableArrow" />
+        <attr name="srlDrawableProgress" />
+        <attr name="srlDrawableMarginRight" />
+        <attr name="srlDrawableSize" />
+        <attr name="srlDrawableArrowSize" />
+        <attr name="srlDrawableProgressSize" />
+    </declare-styleable>
+    <declare-styleable name="base_core_ClassicsHeader">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlFinishDuration" />
+        <attr name="srlDrawableArrow" />
+        <attr name="srlDrawableProgress" />
+        <attr name="srlDrawableMarginRight" />
+        <attr name="srlDrawableSize" />
+        <attr name="srlDrawableArrowSize" />
+        <attr name="srlDrawableProgressSize" />
+        <attr name="srlTextSizeTitle" />
+        <attr name="srlTextSizeTime" />
+        <attr name="srlTextTimeMarginTop" format="dimension" />
+        <attr name="srlEnableLastTime" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="base_core_SmartRefreshLayout">
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlReboundDuration" format="integer" />
+        <attr name="srlHeaderHeight" format="dimension" />
+        <attr name="srlFooterHeight" format="dimension" />
+        <attr name="srlHeaderInsetStart" format="dimension" />
+        <attr name="srlFooterInsetStart" format="dimension" />
+        <attr name="srlDragRate" format="float" />
+        <attr name="srlHeaderMaxDragRate" format="float" />
+        <attr name="srlFooterMaxDragRate" format="float" />
+        <attr name="srlHeaderTriggerRate" format="float" />
+        <attr name="srlFooterTriggerRate" format="float" />
+        <attr name="srlEnableRefresh" format="boolean" />
+        <attr name="srlEnableLoadMore" format="boolean" />
+        <attr name="srlEnableHeaderTranslationContent" format="boolean" />
+        <attr name="srlEnableFooterTranslationContent" format="boolean" />
+        <attr name="srlEnablePreviewInEditMode" format="boolean" />
+        <attr name="srlEnableAutoLoadMore" format="boolean" />
+        <attr name="srlEnableOverScrollBounce" format="boolean" />
+        <attr name="srlEnablePureScrollMode" format="boolean" />
+        <attr name="srlEnableNestedScrolling" format="boolean" />
+        <attr name="srlEnableScrollContentWhenLoaded" format="boolean" />
+        <attr name="srlEnableScrollContentWhenRefreshed" format="boolean" />
+        <attr name="srlEnableLoadMoreWhenContentNotFull" format="boolean" />
+        <attr name="srlEnableFooterFollowWhenLoadFinished" format="boolean" />
+        <attr name="srlEnableClipHeaderWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableClipFooterWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableOverScrollDrag" format="boolean" />
+        <attr name="srlDisableContentWhenRefresh" format="boolean" />
+        <attr name="srlDisableContentWhenLoading" format="boolean" />
+        <attr name="srlFixedHeaderViewId" format="reference" />
+        <attr name="srlFixedFooterViewId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="base_core_SmartRefreshLayout_Layout">
+        <attr name="layout_srlSpinnerStyle" />
+        <attr name="layout_srlBackgroundColor" format="color" />
+    </declare-styleable>
+    <string name="base_core_srl_component_falsify" formatted="false">%s falsify area,\n Represents the height[%.1fdp] of drag at run time,\n It does not show anything.</string>
+    <string name="base_core_srl_content_empty">The content view in SmartRefreshLayout is empty. Do you forget to add it in xml layout file?</string>
+    <!--SmartRefreshLayout end-->
+
+</resources>

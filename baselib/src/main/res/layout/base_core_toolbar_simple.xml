@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/baseCoreToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_core_toolbar_height"
+        android:background="@color/base_core_statustitlebar"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/base_core_back">
+
+        <TextView
+            android:id="@+id/baseCoreTvTitle"
+            style="@style/base_core_toolbar_title_style"
+            android:layout_width="@dimen/dp_150"
+            android:layout_gravity="center|center_vertical"
+            tools:text="标题" />
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>
+

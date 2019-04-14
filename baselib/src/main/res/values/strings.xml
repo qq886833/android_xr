@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">baselib</string>
+
+    <!--common-->
+    <string name="base_core_empty">无</string>
+    <string name="base_core_data_null">数据为空</string>
+    <string name="base_core_loading">加载中</string>
+    <string name="base_core_permission_deny">权限获取失败</string>
+    <string name="base_core_remind">提示</string>
+    <string name="base_core_ok">确定</string>
+    <string name="base_core_cancel">取消</string>
+    <string name="base_core_ok2">我知道了</string>
+    <string name="base_core_param_error">参数错误</string>
+
+    <!--loadview-->
+    <string name="base_core_net_error">服务器开了个小差，请稍后再试！</string>
+    <string name="base_core_net_offline">网络掉线,请稍后再试</string>
+    <string name="base_core_net_timeout">请求超时,请稍后再试</string>
+
+    <!--net-->
+    <string name="base_core_net_error_type_default">网络未知错误</string>
+    <string name="base_core_net_error_type_offline">网络掉线</string>
+    <string name="base_core_net_error_type_unconnect">服务端连接失败</string>
+    <string name="base_core_net_error_type_timeout">请求超时</string>
+    <string name="base_core_net_error_type_server">服务端返回错误</string>
+    <string name="base_core_net_error_type_ssl">ssl证书错误</string>
+    <string name="base_core_net_error_local">本地网络错误</string>
+    <string name="base_core_net_error_parse">解析错误</string>
+
+    <!--TODO 添加证书的 url-->
+    <string name="base_core_net_url_mp">""</string>
+
+    <string name="base_core_big_picture">查看大图</string>
+    
+</resources>

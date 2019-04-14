@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pub_app_id">"hcn"</string>
+    <string name="pub_product_name">"hcn.patient_android"</string>
+    <string name="pub_roleId">"patient"</string>
+</resources>

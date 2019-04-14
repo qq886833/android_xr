@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_core_toolbar_height"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/coreBsoftToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_core_toolbar_height"
+        android:background="@color/base_core_statustitlebar"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/base_core_back">
+
+        <TextView
+            android:id="@+id/bsoftToolbarTvTitle"
+            style="@style/base_core_toolbar_title_style"
+            android:layout_width="@dimen/dp_150"
+            android:layout_gravity="center|center_vertical"
+            tools:text="网页" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/base_core_margin">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bsoftToolbarRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                tools:itemCount="1"
+                tools:listitem="@layout/base_core_title_button" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/bsoftToolbarBottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/base_core_divider"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>
+

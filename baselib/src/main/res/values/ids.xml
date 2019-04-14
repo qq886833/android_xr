@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="baseCoreRefreshLayout"/>
+    <item type="id" name="baseCoreLoadLay"/>
+    <item type="id" name="baseCoreToolbar"/>
+    <item type="id" name="baseCoreWebview"/>
+    <item type="id" name="baseCoreTvTitle"/>
+    <item type="id" name="baseCoreRecyclerview"/>
+    <item type="id" name="baseCoreBosftToolbar"/>
+
+    <!--statusbarutil-->
+    <item name="statusbarutil_fake_status_bar_view" type="id"/>
+    <item name="statusbarutil_translucent_view" type="id"/>
+</resources>

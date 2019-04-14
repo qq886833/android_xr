@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">paylib</string>
+
+    <string name="base_pay_success">支付成功</string>
+    <string name="base_pay_error">支付失败</string>
+    <string name="base_pay_cancel">支付取消</string>
+
+    <string name="base_pay_no_weixin">没有安装微信</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="base_core_dialog_theme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="base_core_toolbar_title_style">
+        <item name="android:textColor">@color/base_core_title</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxWidth">@dimen/dp_150</item>
+    </style>
+
+    <style name="base_core_toolbar_sub_style">
+        <item name="android:textColor">@color/base_core_title</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxWidth">@dimen/dp_200</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="base_appCoreTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="colorPrimary">@color/base_core_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/base_core_colorPrimaryDark</item>
+        <item name="colorAccent">@color/base_core_colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowBackground">@color/base_core_bg</item>
+    </style>
+
+    <style name="base_appCoreThemeFit" parent="base_appCoreTheme">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="base_appCoreThemeNofit" parent="base_appCoreTheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+
+    <!--setting style-->
+    <style name="base_core_setting_layout">
+        <item name="android:background">@color/base_core_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
+    </style>
+
+    <style name="base_core_setting_text_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/base_core_margin</item>
+        <item name="android:textSize">@dimen/base_core_main_body</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="base_core_setting_text_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/base_core_margin</item>
+        <item name="android:textSize">@dimen/base_core_main_body</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="base_core_setting_edit_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/base_core_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:maxWidth">@dimen/dp_200</item>
+        <item name="android:layout_marginRight">@dimen/base_core_margin</item>
+        <item name="android:textSize">@dimen/base_core_main_body</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="base_core_setting_text_right_arrow">
+        <item name="android:layout_width">@dimen/dp_10</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@mipmap/base_core_arrow_right_gray</item>
+        <item name="android:layout_marginRight">@dimen/base_core_margin</item>
+    </style>
+
+    <style name="base_core_setting_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_0_5</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">@dimen/base_core_margin</item>
+        <item name="android:background">@color/base_core_divider</item>
+    </style>
+
+
+    <declare-styleable name="base_core_RatingBar">
+        <attr name="starCount" format="integer" />
+        <attr name="canEdit" format="boolean" />
+        <attr name="widthAndHeight" format="dimension" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="countSelected" format="integer" />
+        <attr name="stateResId" format="reference" />
+        <attr name="differentSize" format="boolean" />
+    </declare-styleable>
+
+
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color> //导航栏颜色
+    <color name="colorPrimaryDark">#00574B</color> //状态栏颜色
+    <color name="colorAccent">#17c782</color> //控件主题颜色
+    <color name="windowBackground">#d9d9d9</color> //默认界面背景颜色
+    <color name="textColorPrimary">#333333</color> //默认文字主题颜色
+
+
+
+
+    <!--主题色-->
+    <color name="base_core_theme_color">#33adff</color>
+    <!--主题色反色-->
+    <color name="base_core_theme_color_verse">#FFFFFF</color>
+
+    <!--返回按钮颜色-->
+    <color name="base_core_back_arrow">@color/base_core_theme_color_verse</color>
+    <!--title颜色-->
+    <color name="base_core_title">@color/base_core_theme_color_verse</color>
+    <!--status title 颜色-->
+    <color name="base_core_statustitlebar">@color/base_core_theme_color</color>
+
+    <color name="base_core_colorPrimary">@color/base_core_theme_color</color>
+    <color name="base_core_colorPrimaryDark">@color/base_core_theme_color</color>
+    <color name="base_core_colorAccent">@color/base_core_theme_color</color>
+
+    <color name="base_core_bg">#f2f2f2</color>
+    <!--默认字体颜色-->
+    <color name="base_core_text_main">#3a3a3a</color>
+    <color name="base_core_text_sub">#999999</color>
+    <color name="base_core_text_heavy">#000000</color>
+    <color name="base_core_text_light">#cccccc</color>
+
+    <color name="base_core_text_setting">#666666</color>
+
+    <color name="base_core_white">#FFFFFF</color>
+    <color name="base_core_black">#000000</color>
+    <color name="base_core_transparent">#00000000</color>
+
+    <color name="base_core_divider">#e4e4e4</color>
+
+    
+</resources>
