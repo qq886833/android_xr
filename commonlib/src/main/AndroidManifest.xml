@@ -1,2 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bsoft.commonlib" />
+    package="com.bsoft.commonlib" >
+
+    <application>
+        <activity
+            android:name=".web.CommonWebActivity"
+            android:theme="@style/base_appCoreThemeFit" />
+        <activity
+            android:name=".changenet.ChangeNetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/base_appCoreThemeFit" />
+    </application>
+
+
+</manifest>

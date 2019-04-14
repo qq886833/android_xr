@@ -71,7 +71,7 @@ public class NetEnvironmentUtil {
         }
         AssetManager assetManager = context.getAssets();
         try {
-            InputStream is = assetManager.open("yjhealth_netConfigs");
+            InputStream is = assetManager.open("base_netConfigs");
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             StringBuffer stringBuffer = new StringBuffer();
             String str = null;
