@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="common_core_def_switch_view">
+        <item name="switch_bg_color_close">#999999</item>
+        <item name="switch_bg_color_open">@color/base_core_theme_color</item>
+        <item name="switch_ball_color">#ffffff</item>
+    </style>
+</resources>

@@ -25,7 +25,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME : project.getName(),
+                             AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
         externalNativeBuild {
             cmake {
                 cppFlags ""
@@ -86,6 +93,6 @@ dependencies {
     //implementation project(':commonlib')
     //implementation project(':baselib')
     // api 'com.alibaba:arouter-api:1.3.1'
-    //  annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    annotationProcessor "com.alibaba:arouter-compiler:$arouterAnnotationVersion"
     implementation project(':commonlib')
 }

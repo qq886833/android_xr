@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="commonCoreSwitchView">
+        <attr name="switch_bg_color_close" format="color" />
+        <attr name="switch_bg_color_open" format="color" />
+        <attr name="switch_ball_color" format="color" />
+    </declare-styleable>
+
+    <!--WordsNavigationVertical-->
+    <declare-styleable name="commonCoreWordsNavigation">
+        <attr name="text_noselect_color" format="color" />
+        <attr name="text_select_color" format="color" />
+        <attr name="text_bg_color" format="color" />
+    </declare-styleable>
+</resources>

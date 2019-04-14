@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="common_app_id" tools:ignore="ResourceName">"hcn"</string>
+    <string name="common_product_name" tools:ignore="ResourceName">"hcn.patient_android"</string>
+    <string name="common_roleId" tools:ignore="ResourceName">"patient"</string>
+
+    <string name="common_arouter_name">common_arouter_name</string>
+</resources>
