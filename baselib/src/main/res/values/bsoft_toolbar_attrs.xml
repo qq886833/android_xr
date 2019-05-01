@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BsoftToolbar">
+        <attr name="bsoft_toolbar_back_drawable" format="reference" />
+        <attr name="bsoft_toolbar_title" format="string|reference" />
+        <attr name="bsoft_toolbar_title_color" format="color|reference" />
+        <attr name="bsoft_toolbar_background_color" format="color|reference" />
+        <attr name="bsoft_toolbar_line_visible" format="boolean" />
+    </declare-styleable>
+</resources>

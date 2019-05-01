@@ -9,13 +9,20 @@ import android.view.View;
 
 import com.bsoft.baselib.R;
 
+import androidx.annotation.IdRes;
+
 @SuppressLint("ValidFragment")
 public class CoreDialog extends CoreDialogFragment {
     /*Default*/
     /*Util*/
     /*Flag*/
     /*View*/
+    private boolean cancelable = false;
+    private boolean canceledOnTouchOutside = false;
+    private DialogInterface.OnKeyListener onKeyListener;
+    /*View*/
     private View root;
+    private Dialog alertDialog;
 
     public CoreDialog(View root) {
         this.root = root;
@@ -41,5 +48,33 @@ public class CoreDialog extends CoreDialogFragment {
 
         alertDialog.setContentView(root);
         return alertDialog;
+    }
+    @Override
+    public void setCancelable(boolean cancelable) {
+        this.cancelable = cancelable;
+        if (alertDialog != null) {
+            alertDialog.setCancelable(cancelable);
+        }
+    }
+
+    public void setCanceledOnTouchOutside(boolean touchOutside) {
+        this.canceledOnTouchOutside = touchOutside;
+        if (alertDialog != null) {
+            alertDialog.setCanceledOnTouchOutside(touchOutside);
+        }
+    }
+
+    public void setOnKeyListener(DialogInterface.OnKeyListener onKeyListener) {
+        this.onKeyListener = onKeyListener;
+        if (alertDialog != null) {
+            alertDialog.setOnKeyListener(onKeyListener);
+        }
+    }
+
+    public <T extends View> T findViewById(@IdRes int id) {
+        if (root == null) {
+            return null;
+        }
+        return root.findViewById(id);
     }
 }

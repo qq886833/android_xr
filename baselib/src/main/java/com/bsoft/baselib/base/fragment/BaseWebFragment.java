@@ -97,6 +97,11 @@ public abstract class BaseWebFragment extends BaseListFragment implements CoreWe
                 public void onBack() {
                     back();
                 }
+
+                @Override
+                public void updateStatusBar() {
+
+                }
             });
         }
 

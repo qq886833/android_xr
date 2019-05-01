@@ -115,6 +115,11 @@ public abstract class BaseWebActivity extends BaseListActivity implements CoreWe
                 public void onBack() {
                     back();
                 }
+
+                @Override
+                public void updateStatusBar() {
+
+                }
             });
         }
 

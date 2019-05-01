@@ -5,5 +5,5 @@ package com.bsoft.baselib.log;
  */
 
 public class CoreLogTag {
-    public static final String TAG = "yjhealthcorelib";
+    public static final String TAG = "corelib";
 }

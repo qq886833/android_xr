@@ -25,7 +25,7 @@ greendao {
 android {
      compileSdkVersion Integer.parseInt(project.compileSdkVersion)
     buildToolsVersion project.buildToolsVersion
-    resourcePrefix 'common_'
+  //  resourcePrefix 'common_'
 
 
     defaultConfig {

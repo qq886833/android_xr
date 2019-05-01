@@ -31,4 +31,21 @@
     <string name="common_phone_empty">手机号不能为空</string>
     <string name="common_phone_lenth_error">手机号长度不对</string>
 
+
+
+    <!--TODO 添加证书的 url-->
+    <string name="common_core_net_url_mp">""</string>
+
+    <string name="common_core_big_picture">查看大图</string>
+
+    <string name="common_core_no_baidu">未安装百度地图</string>
+    <string name="common_core_no_gaode">未安装高德地图</string>
+
+
+    <string name="common_core_permission">权限</string>
+    <string name="common_core_photo_permision_title">权限说明</string>
+    <string name="common_core_photo_permision_msg">您禁止了以下权限的动态申请：\n%1$s权限\n是否去应用权限管理中手动授权呢？</string>
+    <string name="common_core_photo_photo_cancel">取消获取图片</string>
+    <string name="common_core_photo_photo_error">图片获取失败</string>
+
 </resources>

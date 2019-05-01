@@ -60,6 +60,12 @@ public class StatusTitleConfig extends CoreVo {
     public int titleColorLocal;
 
     /**
+     * 底部分割线
+     */
+    public boolean bottomLineVisibility;
+
+
+    /**
      * 标题栏自定义按钮
      */
     public ArrayList<TitleButtonConfig> titleBtn;
