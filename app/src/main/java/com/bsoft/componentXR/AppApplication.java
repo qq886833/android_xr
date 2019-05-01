@@ -3,6 +3,7 @@ package com.bsoft.componentXR;
 import android.app.Application;
 import android.os.Bundle;
 
+import com.bsoft.baselib.util.FileUriPermissionCompat;
 import com.bsoft.baselib.util.ToastUtil;
 import com.bsoft.commonlib.init.BaseAppInit;
 import com.bsoft.commonlib.init.BaseInitConfig;
@@ -17,6 +18,7 @@ public class AppApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        FileUriPermissionCompat.init(BuildConfig.APPLICATION_ID + ".myFileProvider");
         BaseAppInit.getInstance().init(this, getConfig(), new InitListener() {
 
             @Override
