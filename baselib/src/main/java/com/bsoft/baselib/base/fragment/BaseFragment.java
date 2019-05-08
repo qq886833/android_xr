@@ -64,11 +64,10 @@ public abstract class BaseFragment extends CoreFragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         this.isVisibleToUser = isVisibleToUser;
-        this.viewpagerLoad = true;
         if (!isCreated) {
             return;
         }
-
+        this.viewpagerLoad = true;
         if (isVisibleToUser) {
             startHint();
         } else {

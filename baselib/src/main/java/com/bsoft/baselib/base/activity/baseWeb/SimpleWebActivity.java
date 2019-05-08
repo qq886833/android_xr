@@ -9,6 +9,7 @@ import android.view.View;
 import android.webkit.WebView;
 
 import com.bsoft.baselib.R;
+import com.bsoft.baselib.base.activity.BaseWebActivity;
 
 
 public class SimpleWebActivity extends BaseWebActivity {

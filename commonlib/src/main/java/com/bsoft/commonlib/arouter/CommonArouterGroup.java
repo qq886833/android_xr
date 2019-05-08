@@ -18,7 +18,7 @@ public class CommonArouterGroup {
     public static String AROUTER_NAME = CoreAppInit.getApplication().getString(R.string.common_arouter_name);
     //TODO 根据项目修改
     public static final int PRIORITY = 111;
-    private static final String PROJECT = "/yjhealthcore_";
+    private static final String PROJECT = "/commonlibcore_";
 
 
     public static final String MAIN_TAB_ACTIVITY = PROJECT + "app/home/mainTabActivity";

@@ -1,4 +1,6 @@
 package com.bsoft.commonlib.net;
+import android.content.Context;
+
 import com.bsoft.baselib.core.CoreAppInit;
 import com.bsoft.baselib.net.base.BaseObserver;
 import com.bsoft.baselib.net.base.BaseObserver2;
@@ -11,52 +13,39 @@ import com.trello.rxlifecycle2.LifecycleProvider;
 import java.util.ArrayList;
 
 import androidx.collection.ArrayMap;
+import okhttp3.Interceptor;
 
-public class CommonPostManager {
-    private static class NetPostUtilHolder {
-        private static final NetPostUtil INSTANCE = new NetPostUtil(CoreAppInit.getApplication(),
-                NetConstants.httpApiUrl,new HeaderInterceptor());
+public class CommonPostManager extends NetPostUtil {
+
+    private static class Holder {
+        private static final CommonPostManager INSTANCE = new CommonPostManager(CoreAppInit.getApplication(),
+                NetConstants.httpApiUrl, new HeaderInterceptor());
     }
 
-    public static NetPostUtil getInstance() {
-        return NetPostUtilHolder.INSTANCE;
+    public static CommonPostManager getInstance() {
+        return Holder.INSTANCE;
     }
 
-    //********************************  post return null**********************************
-    public static void post(LifecycleProvider provider, String url, ArrayMap<String, String> heads, Object body,
-                            BaseObserver<NullResponse> observer) {
-        getInstance().post(provider, url, heads, body, observer);
+    /**
+     * 构造方法
+     *
+     * @param context      context
+     * @param baseUrl      baseUrl
+     * @param interceptors
+     */
+    public CommonPostManager(Context context, String baseUrl, Interceptor... interceptors) {
+        super(context, baseUrl, interceptors);
     }
 
-    //********************************  post **********************************
-    public static <T> void post(LifecycleProvider provider, String url,
-                                ArrayMap<String, String> heads, Object body,
-                                Class<T> clazz, BaseObserver<T> observer) {
-        getInstance().post(provider, url, heads, body, clazz, observer);
+    public <T> void post(LifecycleProvider provider, ArrayMap<String, String> heads, Object body,
+                         Class<T> clazz, BaseObserver<T> observer) {
+        post(provider, "*.jsonRequest", heads, body, clazz, observer);
     }
 
-    public static <T> void post(LifecycleProvider provider, ArrayMap<String, String> heads, Object body,
-                                Class<T> clazz, BaseObserver<T> observer) {
-        getInstance().post(provider, "*.jsonRequest", heads, body, clazz, observer);
+    public <T> void postList(LifecycleProvider provider, ArrayMap<String, String> heads, Object body,
+                             Class<T> clazz, BaseObserver<ArrayList<T>> observer) {
+        postList(provider, "*.jsonRequest", heads, body, clazz, observer);
     }
 
-    //********************************  post 2**********************************
-    public static <T extends CoreResponse> void post(LifecycleProvider provider, String url,
-                                                     ArrayMap<String, String> heads, Object body,
-                                                     Class<T> clazz, BaseObserver2<T> observer) {
-        getInstance().post(provider, url, heads, body, clazz, observer);
-    }
-
-    //******************************* postList *********************************************
-    public static <T> void postList(LifecycleProvider provider, String url,
-                                    ArrayMap<String, String> heads, Object body,
-                                    Class<T> clazz, BaseObserver<ArrayList<T>> observer) {
-        getInstance().postList(provider, url, heads, body, clazz, observer);
-    }
-
-    public static <T> void postList(LifecycleProvider provider, ArrayMap<String, String> heads, Object body,
-                                    Class<T> clazz, BaseObserver<ArrayList<T>> observer) {
-        getInstance().postList(provider, "*.jsonRequest", heads, body, clazz, observer);
-    }
 
 }

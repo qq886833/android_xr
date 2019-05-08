@@ -8,6 +8,9 @@ import com.bsoft.baselib.util.ToastUtil;
 import com.bsoft.commonlib.init.BaseAppInit;
 import com.bsoft.commonlib.init.BaseInitConfig;
 import com.bsoft.commonlib.init.InitListener;
+import com.bsoft.commonlib.init.WiseInit;
+
+import org.greenrobot.eventbus.EventBus;
 
 
 /**
@@ -19,7 +22,7 @@ public class AppApplication extends Application {
     public void onCreate() {
         super.onCreate();
         FileUriPermissionCompat.init(BuildConfig.APPLICATION_ID + ".myFileProvider");
-        BaseAppInit.getInstance().init(this, getConfig(), new InitListener() {
+        WiseInit.init(this, getConfig(), new InitListener() {
 
             @Override
             public void needLogin(String path, Bundle param) {
@@ -39,6 +42,10 @@ public class AppApplication extends Application {
                 ToastUtil.toast(R.string.common_account_not_perfect);
             }
         });
+
+        if (!EventBus.getDefault().isRegistered(this)) {
+            EventBus.getDefault().register(this);
+        }
     }
 
     private BaseInitConfig getConfig() {

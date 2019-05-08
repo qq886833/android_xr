@@ -7,8 +7,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
-    <application>
+<!--9.0https适配-->
+    <application
+        android:networkSecurityConfig="@xml/base_core_network_security_config">
         <activity
             android:name=".base.activity.baseWeb.SimpleWebActivity"
             android:configChanges="orientation|keyboardHidden"

@@ -8,7 +8,7 @@ import android.text.TextUtils;
 import android.webkit.WebView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.bsoft.baselib.base.activity.baseWeb.BaseWebActivity;
+import com.bsoft.baselib.base.activity.BaseWebActivity;
 import com.bsoft.baselib.core.CoreAppInit;
 import com.bsoft.baselib.util.DataConverUtil;
 import com.bsoft.commonlib.R;

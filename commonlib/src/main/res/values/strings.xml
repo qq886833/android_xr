@@ -31,7 +31,26 @@
     <string name="common_phone_empty">手机号不能为空</string>
     <string name="common_phone_lenth_error">手机号长度不对</string>
 
+    <string name="common_relation">家庭成员关系</string>
+    <string name="common_own">本人</string>
+    <string name="common_spouse">配偶</string>
+    <string name="common_son">子</string>
+    <string name="common_daoghter">女</string>
+    <string name="common_grandson">孙</string>
+    <string name="common_parent">父母</string>
+    <string name="common_ancestor">祖辈</string>
+    <string name="common_brother">兄弟姐妹</string>
+    <string name="common_other_relation">其他</string>
 
+
+    <string name="common_national">国籍</string>
+    <string name="common_china">中国</string>
+    <string name="common_hongkong">中国香港澳门</string>
+    <string name="common_taiwan">中国台湾</string>
+    <string name="common_overseas">海外</string>
+
+    <string name="common_social_card">社保卡</string>
+    <string name="common_medical_card">就诊卡</string>
 
     <!--TODO 添加证书的 url-->
     <string name="common_core_net_url_mp">""</string>

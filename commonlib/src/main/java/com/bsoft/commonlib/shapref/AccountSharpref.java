@@ -17,7 +17,7 @@ public class AccountSharpref {
     /*Default*/
     private static final int SHARED_MODE = Context.MODE_PRIVATE;
     private static final String SHARED_NAME = "share_account";
-
+    public static final String LOGIN_STATE = "login_state";
     //key
     private static final String KEY_TOKEN = "token";
     private static final String KEY_ACCOUNT = "account";
@@ -141,6 +141,34 @@ public class AccountSharpref {
                     .edit()
                     .putBoolean(KEY_USER_INFO_PERFECT, perfect)
                     .commit();
+        }
+    }
+
+
+    @NonNull
+    private boolean getBoolen(String key) {
+        return context
+                .getSharedPreferences(SHARED_NAME, SHARED_MODE)
+                .getBoolean(key, false);
+    }
+
+    private boolean setBoolen(boolean str, String key) {
+        return context
+                .getSharedPreferences(SHARED_NAME, SHARED_MODE)
+                .edit()
+                .putBoolean(key, str)
+                .commit();
+    }
+
+    public boolean setLoginState(boolean flag) {
+        synchronized (this) {
+            return setBoolen(flag, LOGIN_STATE);
+        }
+    }
+
+    public boolean getLoginState() {
+        synchronized (this) {
+            return getBoolen(LOGIN_STATE);
         }
     }
 }

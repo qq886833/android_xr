@@ -1,4 +1,4 @@
-package com.bsoft.baselib.base.activity.baseWeb;
+package com.bsoft.baselib.base.activity;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -18,7 +18,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.bsoft.baselib.R;
-import com.bsoft.baselib.base.activity.BaseListActivity;
 import com.bsoft.baselib.base.webinterface.BsoftJsInterface;
 import com.bsoft.baselib.base.webinterface.CoreWebInterface;
 import com.bsoft.baselib.base.webinterface.config.EndLoadMoreConfig;

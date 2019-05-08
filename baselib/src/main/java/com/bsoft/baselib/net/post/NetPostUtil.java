@@ -98,7 +98,7 @@ public class NetPostUtil {
         //ssl
         InputStream[] certificates = null;
         if (context.getString(R.string.base_core_net_url_mp).equals(baseUrl)) {
-            certificates = new InputStream[]{context.getResources().openRawResource(R.raw.yjhealth_core_network_mp)};
+            certificates = new InputStream[]{context.getResources().openRawResource(R.raw.common_core_network_mp)};
         }
         SSLTools.SSLParams sslParams = SSLTools.getSslSocketFactory(certificates, null, null);
         if (sslParams != null) {
